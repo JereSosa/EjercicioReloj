@@ -16,5 +16,38 @@ public class TpLaboGitHubReloj {
     public static void main(String[] args) {
         
     }
+    public class RelojFit extends Reloj {
     
+    public RelojFit(String dia, String hora, String modelo, long numSerie) {
+        super(dia, hora, modelo, numSerie);
+    }
+
+    public void cuentaPasos(int x, int y) {
+        // Implementación para contar pasos
+        System.out.println("Pasos contados en coordenadas (" + x + ", " + y + ")");
+    }
+
+    public void frecuenciaAleatoria() {
+        // Generar y mostrar una frecuencia aleatoria
+        double frecuencia = Math.random() * 100;
+        System.out.println("Frecuencia aleatoria: " + frecuencia);
+    }
+        public class Persona {
+    private String nombre;
+    private int edad;
+    private Reloj reloj;
+    
+    public Persona(String nombre, int edad, Reloj reloj) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.reloj = reloj;
+    }
+
+    public Reloj getReloj() {
+        return reloj;
+    }
+}
+
+}
+
 }
