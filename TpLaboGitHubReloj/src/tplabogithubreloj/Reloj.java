@@ -65,7 +65,7 @@ public class Reloj {
     
     public void incrementarHora() {
         Scanner leer = new Scanner(System.in);
-        System.out.println("desea incrementar minutos o horas? M/H");
+        System.out.println("desea incrementar minutos u horas? M/H");
         String opcion = leer.next();
 
         while (!opcion.equalsIgnoreCase("m") && !opcion.equalsIgnoreCase("h")) {
